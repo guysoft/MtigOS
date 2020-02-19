@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# MTIGOS main module
+# The script build the MTIGOS main distro
+# Written by Guy Sheffer <guysoft at gmail got com>
+########
+
+
+# Source error handling, leave this in place
+set -x
+set -e
+
+source /common.sh
+install_cleanup_trap
+
+unpack /filesystem/home/pi /home/"${BASE_USER}" "${BASE_USER}"
+unpack /filesystem/home/root /root root
+
+apt-get update
+apt-get install -y git
+
+mkdir -p /boot/docker-compose
+
+pushd /tmp
+    gitclone MTIGOS_DOCKER_MTIG_REPO mtig
+    mv mtig /boot/docker-compose/
+popd
+
+unpack /filesystem/boot /boot
+
+
+# Unpack root at the end, so files are modified before
+unpack /filesystem/root /
+
+apt-get clean
