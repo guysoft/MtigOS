@@ -13,6 +13,7 @@ Official mirror is `here <http://unofficialpi.org/Distros/MtigOS>`_
 
 How to use it?
 --------------
+`Blog post with step-by-step instructions here <https://guysoft.wordpress.com/mtigos/>`_
 
 #. Unzip the image and install it to an SD card `like any other Raspberry Pi image <https://www.raspberrypi.org/documentation/installation/installing-images/README.md>`_
 #. Configure your WiFi by editing ``mtigos-wpa-supplicant.txt`` at the root of the flashed card when using it like a flash drive
