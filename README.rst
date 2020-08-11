@@ -60,7 +60,7 @@ You can build it assuming you already have docker and docker-compose installed i
     
     git clone https://github.com/guysoft/MtigOS.git
     cd MtigOS/src/image
-    wget -c --trust-server-names 'https://downloads.raspberrypi.org/raspbian_lite_latest'
+    wget -c --trust-server-names 'https://downloads.raspberrypi.org/raspios_lite_armhf_latest'
     cd ..
     sudo docker-compose up -d
     sudo docker exec -it mtigos-build build
