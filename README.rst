@@ -1,7 +1,7 @@
 MtigOS
 ======
 
-An out of the box `Raspberry Pi <http://www.raspberrypi.org/>`_ Raspbian distro that lets you receive, store and graph sensor information from ESP8266 chips.
+An out of the box `Raspberry Pi <http://www.raspberrypi.org/>`_ "Raspberry Pi OS" distro that lets you receive, store and graph sensor information from ESP8266 chips.
 
 It uses and MTIG stack: `Mosquitto <https://mosquitto.org>`_, `Telegraf <https://www.influxdata.com/time-series-platform/telegraf/>`_, `InfluxDB <https://www.influxdata.com>`_ and  `Grafana <https://grafana.com/>`_ which are all pre-configured to work together. They automatically update using Docker.
 
